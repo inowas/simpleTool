@@ -1,0 +1,17 @@
+.button {
+  padding: @spacing-small @spacing-regular;
+  border: 0;
+  border-radius: @border-radius;
+  background-color: @background-dark;
+  color: @color-dark;
+  cursor: pointer;
+}
+
+.button-accent {
+  background-color: @accent;
+}
+
+.button-accent:hover,
+.button-accent:focus {
+  background-color: darken(@accent, 15%);
+}

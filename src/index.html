@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>simple Tool</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Oxygen:300,400,700" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+
+  <div class="page-wrapper">
+
+    <div class="grid-container">
+      <section class="tile col col-abs-2">
+        <h2>Background</h2>
+        <img src="img/diagram.png" />
+      </section>
+
+      <section class="tile col col-abs-3 stretch">
+        <h2>Calculation</h2>
+        <div class="grid-container">
+          <div class="col stretch">
+            <div class="aspect-ratio-wrapper">
+              <div class="aspect-ratio-element diagram">
+
+              </div>
+            </div>
+          </div>
+          <div class="col col-rel-0-5">
+            <ul class="nav nav-stacked" role="navigation">
+              <li><button class="button">PNG</button></li>
+              <li><button class="button">CSV</button></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div class="grid-container">
+      <section class="tile col col-abs-2">
+        <h2>Settings</h2>
+        <div class="center-vertical center-horizontal">
+          <div class="radio-group">
+            <div>
+              <input name="radio-group-1" type="radio" value="" id="radio1" / />
+              <label for="radio1">Confined Aquifer</label>
+            </div>
+            <div>
+              <input name="radio-group-1" type="radio" value="" id="radio2" / />
+              <label for="radio2">Unconfined Aquifer</label>
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+      <section class="tile col col-abs-3 stretch">
+        <div class="grid-container">
+          <div class="col stretch parameters-wrapper">
+            <table class="parameters">
+              <tr class="parameter">
+                <td class="parameter-label">
+                  Hydraulic Conductivity, K (m/d)
+                </td>
+                <td class="">
+                  <input class="parameter-min input input-xs" type="text" />
+                  <input class="parameter-max input input-xs" type="text" />
+                  <input class="parameter-input" type="range" min="0" max="30" step="1" value="15" />
+                </td>
+              </tr>
+              <tr class="parameter">
+                <td class="parameter-label">
+                  Depth to base of aquifer, B(m)
+                </td>
+                <td class="parameter-inputs">
+                  <input class="parameter-min input input-xs" type="text" />
+                  <input class="parameter-max input input-xs" type="text" />
+                  <input class="parameter-input" type="range" min="0" max="30" step="1" value="15" />
+                </td>
+              </tr>
+            </table>
+          </div>
+          <div class="col col-rel-0-5">
+            <ul class="nav nav-stacked" role="navigation">
+              <li><button class="button button-accent">Default</button></li>
+            </ul>
+          </div>
+        </div>
+
+
+      </section>
+    </div>
+
+  </div>
+
+</body>
+
+</html>
