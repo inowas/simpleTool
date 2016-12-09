@@ -5,13 +5,18 @@
   background-color: @background-dark;
   color: @color-dark;
   cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: darken(@background-dark, 15%);
+  }
 }
 
 .button-accent {
   background-color: @accent;
-}
 
-.button-accent:hover,
-.button-accent:focus {
-  background-color: darken(@accent, 15%);
+  &:hover,
+  &:focus {
+    background-color: darken(@accent, 15%);
+  }
 }
